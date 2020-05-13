@@ -24,7 +24,12 @@ jobs:
           # Reproduce pipeline if any changes detected in dependencies
           dvc repro train.dvc
           
+          # Use DVC metrics diff to compare metrics to previous commit
           BASELINE=origin/master
           dvc metrics diff --show-json "$BASELINE" | cml-metrics >> report.md
-          dvc diff --show-json "$BASELINE" | cml-files >> report.md
+          
+          # Add figure to report
+          cml-publish pr_curve.png --md --title 'pr curve' >> report.md
           cml-send-github-check report.md 
+          
+          
