@@ -4,6 +4,9 @@ import json
 import os
 import numpy as np
 
+import matplotlib.pyplot as plt 
+import scikitplot as skplot
+
 # Read in data
 X_train = np.genfromtxt("data/train_features.csv")
 y_train = np.genfromtxt("data/train_labels.csv")
@@ -26,6 +29,10 @@ rec = recall_score(y_test,y_score)
 
 
 with open("metrics.json", 'w') as outfile:
-        json.dump({ "accuracy": acc, "precision:":prec,"recall":rec}, outfile)
+        json.dump({ "accuracy": acc, "precision":prec,"recall":rec}, outfile)
 
+# Make a Precision-recall curve
+probas = clf.predict_proba(X_test)
+skplot.metrics.plot_precision_recall_curve(y_test, probas)
+plt.savefig("pr_curve.png")
 
