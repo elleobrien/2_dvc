@@ -1,9 +1,13 @@
 cmd: python train.py
 deps:
 - path: train.py
+  md5: 7e43f1bb123b8d596a107ae3d33b67f1
 - path: data
+  md5: c5a2bbc6820f83da3788d7dceb32c42d.dir
 outs:
 - path: metrics.json
   cache: false
   metric: true
   persist: false
+  md5: 5b684231a42557751da82c4a1e93bfec
+md5: 4bfd170b873a50693c08daeb1b51599c
