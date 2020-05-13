@@ -1,7 +1,7 @@
 cmd: python train.py
 deps:
 - path: train.py
-  md5: 7f94c4003a9adae0fad1830afad5334e
+  md5: 6a18194a82eabd9994864b26260b9ca0
 - path: data
   md5: c5a2bbc6820f83da3788d7dceb32c42d.dir
 outs:
@@ -9,5 +9,5 @@ outs:
   cache: false
   metric: true
   persist: false
-  md5: 43b1bd5c51268401b5a692c64620d9b4
-md5: a3c0d392eb5810224c9f430444b7c105
+  md5: 0f3ca524ea82a6820a99202e65d228e4
+md5: 2dfbf76c93b551748cab467cd3829abc
