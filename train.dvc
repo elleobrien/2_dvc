@@ -1,0 +1,9 @@
+cmd: python train.py
+deps:
+- path: train.py
+- path: data
+outs:
+- path: metrics.json
+  cache: false
+  metric: true
+  persist: false
