@@ -1,0 +1,10 @@
+mystage:
+  cmd: python train.py
+  deps:
+  - path: data
+    md5: c5a2bbc6820f83da3788d7dceb32c42d.dir
+  - path: train.py
+    md5: ddf8d641ff0fb60069adb73841dd00c0
+  outs:
+  - path: metrics.json
+    md5: 7d2d374a330d6fac50d27700aa68b6bb
