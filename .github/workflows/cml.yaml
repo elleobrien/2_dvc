@@ -25,7 +25,7 @@ jobs:
           pip install -r requirements.txt
           
           # Pull dataset with DVC 
-          dvc pull
+          dvc pull data
           
           # Reproduce pipeline if any changes detected in dependencies
           dvc repro 
@@ -35,8 +35,6 @@ jobs:
           dvc metrics diff --show-md "$BASELINE" >> report.md
           
           # Add figure to report
-          echo "\n" >> report.md
-          cml-publish pr_curve.png --md --title 'pr curve' >> report.md
           cml-send-github-check report.md 
           
           
