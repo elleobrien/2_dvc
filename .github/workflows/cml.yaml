@@ -33,11 +33,13 @@ jobs:
           # Use DVC metrics diff to compare metrics to previous commit
           BASELINE=master
           dvc metrics diff --show-md "$BASELINE" >> report.md
+          echo >> report.md
           
           # Add figure to report
-          dvc plots show loss.csv --show-vega > vega.json
+          dvc plots show loss.csv --show-vega > tmp.json
+          tail -n +2 tmp.json > vega.json
           vl2png vega.json -s 1.5 | cml-publish --md --title "loss plot" >> report.md
-          
+
           cml-send-comment report.md 
           
           
