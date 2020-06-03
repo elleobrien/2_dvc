@@ -28,7 +28,7 @@ jobs:
           dvc pull
           
           # Reproduce pipeline if any changes detected in dependencies
-          dvc repro train.dvc
+          dvc repro 
           
           # Use DVC metrics diff to compare metrics to previous commit
           BASELINE=master
