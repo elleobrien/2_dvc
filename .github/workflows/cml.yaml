@@ -16,7 +16,13 @@ jobs:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         run: |
-          pip3 install -r requirements.txt
+          # Get DVC 1.0 
+          apt-get --purge remove -y dvc
+          pip install "git+https://github.com/iterative/dvc#egg=dvc[s3]"
+          dvc --version
+          git fetch --prune --unshallow
+          
+          pip install -r requirements.txt
           
           # Pull dataset with DVC 
           dvc pull
@@ -24,7 +30,13 @@ jobs:
           # Reproduce pipeline if any changes detected in dependencies
           dvc repro train.dvc
           
-          BASELINE=origin/master
-          dvc metrics diff --show-json "$BASELINE" | cml-metrics >> report.md
-          dvc diff --show-json "$BASELINE" | cml-files >> report.md
+          # Use DVC metrics diff to compare metrics to previous commit
+          BASELINE=master
+          dvc metrics diff --show-md "$BASELINE" >> report.md
+          
+          # Add figure to report
+          echo "\n" >> report.md
+          cml-publish pr_curve.png --md --title 'pr curve' >> report.md
           cml-send-github-check report.md 
+          
+          
