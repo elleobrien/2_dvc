@@ -1,0 +1,282 @@
+PlotTemplates.__init__
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+    "data": {
+        "values": [
+    {
+        "index": 0,
+        "loss": "0.35797476798407574",
+        "rev": "workspace"
+    },
+    {
+        "index": 1,
+        "loss": "0.3108355691836759",
+        "rev": "workspace"
+    },
+    {
+        "index": 2,
+        "loss": "0.30909985774265974",
+        "rev": "workspace"
+    },
+    {
+        "index": 3,
+        "loss": "0.3078203619528226",
+        "rev": "workspace"
+    },
+    {
+        "index": 4,
+        "loss": "0.30670321889561303",
+        "rev": "workspace"
+    },
+    {
+        "index": 5,
+        "loss": "0.30538744766821924",
+        "rev": "workspace"
+    },
+    {
+        "index": 6,
+        "loss": "0.303970884444046",
+        "rev": "workspace"
+    },
+    {
+        "index": 7,
+        "loss": "0.3028220489578898",
+        "rev": "workspace"
+    },
+    {
+        "index": 8,
+        "loss": "0.30151777919737727",
+        "rev": "workspace"
+    },
+    {
+        "index": 9,
+        "loss": "0.30065419009321764",
+        "rev": "workspace"
+    },
+    {
+        "index": 10,
+        "loss": "0.29981400691043786",
+        "rev": "workspace"
+    },
+    {
+        "index": 11,
+        "loss": "0.2990685209174709",
+        "rev": "workspace"
+    },
+    {
+        "index": 12,
+        "loss": "0.29852763425049267",
+        "rev": "workspace"
+    },
+    {
+        "index": 13,
+        "loss": "0.2978458625954957",
+        "rev": "workspace"
+    },
+    {
+        "index": 14,
+        "loss": "0.29726278249284166",
+        "rev": "workspace"
+    },
+    {
+        "index": 15,
+        "loss": "0.2967908318467133",
+        "rev": "workspace"
+    },
+    {
+        "index": 16,
+        "loss": "0.2962123245461746",
+        "rev": "workspace"
+    },
+    {
+        "index": 17,
+        "loss": "0.2957809417825015",
+        "rev": "workspace"
+    },
+    {
+        "index": 18,
+        "loss": "0.29527245249314643",
+        "rev": "workspace"
+    },
+    {
+        "index": 19,
+        "loss": "0.294919164116084",
+        "rev": "workspace"
+    },
+    {
+        "index": 20,
+        "loss": "0.2943053237726798",
+        "rev": "workspace"
+    },
+    {
+        "index": 21,
+        "loss": "0.29405383212079383",
+        "rev": "workspace"
+    },
+    {
+        "index": 22,
+        "loss": "0.2937859220278764",
+        "rev": "workspace"
+    },
+    {
+        "index": 23,
+        "loss": "0.2934870435933722",
+        "rev": "workspace"
+    },
+    {
+        "index": 24,
+        "loss": "0.2932417578277601",
+        "rev": "workspace"
+    },
+    {
+        "index": 25,
+        "loss": "0.29287543896124313",
+        "rev": "workspace"
+    },
+    {
+        "index": 26,
+        "loss": "0.2924236682196094",
+        "rev": "workspace"
+    },
+    {
+        "index": 27,
+        "loss": "0.29221233752620646",
+        "rev": "workspace"
+    },
+    {
+        "index": 28,
+        "loss": "0.29195132793960793",
+        "rev": "workspace"
+    },
+    {
+        "index": 29,
+        "loss": "0.2915727515729502",
+        "rev": "workspace"
+    },
+    {
+        "index": 30,
+        "loss": "0.29150347640227825",
+        "rev": "workspace"
+    },
+    {
+        "index": 31,
+        "loss": "0.29123496619168654",
+        "rev": "workspace"
+    },
+    {
+        "index": 32,
+        "loss": "0.29085575142484743",
+        "rev": "workspace"
+    },
+    {
+        "index": 33,
+        "loss": "0.2904402712793793",
+        "rev": "workspace"
+    },
+    {
+        "index": 34,
+        "loss": "0.29036326958394054",
+        "rev": "workspace"
+    },
+    {
+        "index": 35,
+        "loss": "0.29034910240309386",
+        "rev": "workspace"
+    },
+    {
+        "index": 36,
+        "loss": "0.2898218375569284",
+        "rev": "workspace"
+    },
+    {
+        "index": 37,
+        "loss": "0.28957572750327987",
+        "rev": "workspace"
+    },
+    {
+        "index": 38,
+        "loss": "0.2894239925902565",
+        "rev": "workspace"
+    },
+    {
+        "index": 39,
+        "loss": "0.2892991230093341",
+        "rev": "workspace"
+    },
+    {
+        "index": 40,
+        "loss": "0.28891438744299747",
+        "rev": "workspace"
+    },
+    {
+        "index": 41,
+        "loss": "0.28867314421391477",
+        "rev": "workspace"
+    },
+    {
+        "index": 42,
+        "loss": "0.288388343741791",
+        "rev": "workspace"
+    },
+    {
+        "index": 43,
+        "loss": "0.28834036866097357",
+        "rev": "workspace"
+    },
+    {
+        "index": 44,
+        "loss": "0.2879987965400854",
+        "rev": "workspace"
+    },
+    {
+        "index": 45,
+        "loss": "0.28780380639213937",
+        "rev": "workspace"
+    },
+    {
+        "index": 46,
+        "loss": "0.28749829313252273",
+        "rev": "workspace"
+    },
+    {
+        "index": 47,
+        "loss": "0.2872683304447179",
+        "rev": "workspace"
+    },
+    {
+        "index": 48,
+        "loss": "0.28724627707446376",
+        "rev": "workspace"
+    },
+    {
+        "index": 49,
+        "loss": "0.2868515983332266",
+        "rev": "workspace"
+    }
+]
+    },
+    "title": "",
+    "mark": {
+        "type": "line"
+    },
+    "encoding": {
+        "x": {
+            "field": "index",
+            "type": "quantitative",
+            "title": "<DVC_METRIC_X_TITLE>"
+        },
+        "y": {
+            "field": "loss",
+            "type": "quantitative",
+            "title": "<DVC_METRIC_Y_TITLE>",
+            "scale": {
+                "zero": false
+            }
+        },
+        "color": {
+            "field": "rev",
+            "type": "nominal"
+        }
+    }
+}
+

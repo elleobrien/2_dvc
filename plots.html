@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DVC Plot</title>
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.10.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@4.8.1"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.5.1"></script>
+</head>
+<body>
+    <div id = "plot0"></div>
+<script type = "text/javascript">
+    var spec = {
+    "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+    "data": {
+        "values": [
+    {
+        "index": 0,
+        "loss": "0.35797476798407574",
+        "rev": "working tree"
+    },
+    {
+        "index": 1,
+        "loss": "0.3108355691836759",
+        "rev": "working tree"
+    },
+    {
+        "index": 2,
+        "loss": "0.30909985774265974",
+        "rev": "working tree"
+    },
+    {
+        "index": 3,
+        "loss": "0.3078203619528226",
+        "rev": "working tree"
+    },
+    {
+        "index": 4,
+        "loss": "0.30670321889561303",
+        "rev": "working tree"
+    },
+    {
+        "index": 5,
+        "loss": "0.30538744766821924",
+        "rev": "working tree"
+    },
+    {
+        "index": 6,
+        "loss": "0.303970884444046",
+        "rev": "working tree"
+    },
+    {
+        "index": 7,
+        "loss": "0.3028220489578898",
+        "rev": "working tree"
+    },
+    {
+        "index": 8,
+        "loss": "0.30151777919737727",
+        "rev": "working tree"
+    },
+    {
+        "index": 9,
+        "loss": "0.30065419009321764",
+        "rev": "working tree"
+    },
+    {
+        "index": 10,
+        "loss": "0.29981400691043786",
+        "rev": "working tree"
+    },
+    {
+        "index": 11,
+        "loss": "0.2990685209174709",
+        "rev": "working tree"
+    },
+    {
+        "index": 12,
+        "loss": "0.29852763425049267",
+        "rev": "working tree"
+    },
+    {
+        "index": 13,
+        "loss": "0.2978458625954957",
+        "rev": "working tree"
+    },
+    {
+        "index": 14,
+        "loss": "0.29726278249284166",
+        "rev": "working tree"
+    },
+    {
+        "index": 15,
+        "loss": "0.2967908318467133",
+        "rev": "working tree"
+    },
+    {
+        "index": 16,
+        "loss": "0.2962123245461746",
+        "rev": "working tree"
+    },
+    {
+        "index": 17,
+        "loss": "0.2957809417825015",
+        "rev": "working tree"
+    },
+    {
+        "index": 18,
+        "loss": "0.29527245249314643",
+        "rev": "working tree"
+    },
+    {
+        "index": 19,
+        "loss": "0.294919164116084",
+        "rev": "working tree"
+    },
+    {
+        "index": 20,
+        "loss": "0.2943053237726798",
+        "rev": "working tree"
+    },
+    {
+        "index": 21,
+        "loss": "0.29405383212079383",
+        "rev": "working tree"
+    },
+    {
+        "index": 22,
+        "loss": "0.2937859220278764",
+        "rev": "working tree"
+    },
+    {
+        "index": 23,
+        "loss": "0.2934870435933722",
+        "rev": "working tree"
+    },
+    {
+        "index": 24,
+        "loss": "0.2932417578277601",
+        "rev": "working tree"
+    },
+    {
+        "index": 25,
+        "loss": "0.29287543896124313",
+        "rev": "working tree"
+    },
+    {
+        "index": 26,
+        "loss": "0.2924236682196094",
+        "rev": "working tree"
+    },
+    {
+        "index": 27,
+        "loss": "0.29221233752620646",
+        "rev": "working tree"
+    },
+    {
+        "index": 28,
+        "loss": "0.29195132793960793",
+        "rev": "working tree"
+    },
+    {
+        "index": 29,
+        "loss": "0.2915727515729502",
+        "rev": "working tree"
+    },
+    {
+        "index": 30,
+        "loss": "0.29150347640227825",
+        "rev": "working tree"
+    },
+    {
+        "index": 31,
+        "loss": "0.29123496619168654",
+        "rev": "working tree"
+    },
+    {
+        "index": 32,
+        "loss": "0.29085575142484743",
+        "rev": "working tree"
+    },
+    {
+        "index": 33,
+        "loss": "0.2904402712793793",
+        "rev": "working tree"
+    },
+    {
+        "index": 34,
+        "loss": "0.29036326958394054",
+        "rev": "working tree"
+    },
+    {
+        "index": 35,
+        "loss": "0.29034910240309386",
+        "rev": "working tree"
+    },
+    {
+        "index": 36,
+        "loss": "0.2898218375569284",
+        "rev": "working tree"
+    },
+    {
+        "index": 37,
+        "loss": "0.28957572750327987",
+        "rev": "working tree"
+    },
+    {
+        "index": 38,
+        "loss": "0.2894239925902565",
+        "rev": "working tree"
+    },
+    {
+        "index": 39,
+        "loss": "0.2892991230093341",
+        "rev": "working tree"
+    },
+    {
+        "index": 40,
+        "loss": "0.28891438744299747",
+        "rev": "working tree"
+    },
+    {
+        "index": 41,
+        "loss": "0.28867314421391477",
+        "rev": "working tree"
+    },
+    {
+        "index": 42,
+        "loss": "0.288388343741791",
+        "rev": "working tree"
+    },
+    {
+        "index": 43,
+        "loss": "0.28834036866097357",
+        "rev": "working tree"
+    },
+    {
+        "index": 44,
+        "loss": "0.2879987965400854",
+        "rev": "working tree"
+    },
+    {
+        "index": 45,
+        "loss": "0.28780380639213937",
+        "rev": "working tree"
+    },
+    {
+        "index": 46,
+        "loss": "0.28749829313252273",
+        "rev": "working tree"
+    },
+    {
+        "index": 47,
+        "loss": "0.2872683304447179",
+        "rev": "working tree"
+    },
+    {
+        "index": 48,
+        "loss": "0.28724627707446376",
+        "rev": "working tree"
+    },
+    {
+        "index": 49,
+        "loss": "0.2868515983332266",
+        "rev": "working tree"
+    }
+]
+    },
+    "title": "",
+    "mark": {
+        "type": "line"
+    },
+    "encoding": {
+        "x": {
+            "field": "index",
+            "type": "quantitative",
+            "title": "index"
+        },
+        "y": {
+            "field": "loss",
+            "type": "quantitative",
+            "title": "loss",
+            "scale": {
+                "zero": false
+            }
+        },
+        "color": {
+            "field": "rev",
+            "type": "nominal"
+        }
+    }
+}
+;
+    vegaEmbed('#plot0', spec);
+</script>
+</body>
+</html>
