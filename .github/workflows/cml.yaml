@@ -20,7 +20,6 @@ jobs:
           apt-get --purge remove -y dvc
           pip install "git+https://github.com/iterative/dvc#egg=dvc[s3]"
           dvc --version
-          git fetch --prune --unshallow
           
           pip install -r requirements.txt
           
@@ -30,9 +29,8 @@ jobs:
           # Reproduce pipeline if any changes detected in dependencies
           dvc repro 
           
-          # Use DVC metrics diff to compare metrics to previous commit
-          BASELINE=master
-          dvc metrics diff --show-md "$BASELINE" >> report.md
+          # Use DVC metrics diff to compare metrics to master
+          dvc metrics diff --show-md master >> report.md
           echo >> report.md
           
           # Add figure to report
