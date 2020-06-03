@@ -19,7 +19,7 @@ jobs:
           # Get DVC 1.0 
           apt-get --purge remove -y dvc
           pip install "git+https://github.com/iterative/dvc#egg=dvc[s3]"
-          dvc --version
+          
           
           pip install -r requirements.txt
           
@@ -30,6 +30,7 @@ jobs:
           dvc repro 
           
           # Use DVC metrics diff to compare metrics to master
+          git fetch --prune --unshallow
           dvc metrics diff --show-md master >> report.md
           echo >> report.md
           
