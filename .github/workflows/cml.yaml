@@ -35,6 +35,6 @@ jobs:
           dvc metrics diff --show-md "$BASELINE" >> report.md
           
           # Add figure to report
-          cml-send-github-check report.md 
+          cml-send-comment report.md 
           
           
