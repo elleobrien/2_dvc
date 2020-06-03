@@ -19,8 +19,7 @@ jobs:
           # Get DVC 1.0 
           apt-get --purge remove -y dvc
           pip install "git+https://github.com/iterative/dvc#egg=dvc[s3]"
-          dvc --version
-          git fetch --prune --unshallow
+          
           
           pip install -r requirements.txt
           
@@ -30,13 +29,13 @@ jobs:
           # Reproduce pipeline if any changes detected in dependencies
           dvc repro 
           
-          # Use DVC metrics diff to compare metrics to previous commit
-          BASELINE=master
-          dvc metrics diff --show-md "$BASELINE" >> report.md
+          # Use DVC metrics diff to compare metrics to master
+          git fetch --prune --unshallow
+          dvc metrics diff --show-md master >> report.md
           echo >> report.md
           
           # Add figure to report
-          dvc plots show loss.csv --show-vega > tmp.json
+          dvc plots diff --target loss.csv --show-vega master > tmp.json
           tail -n +2 tmp.json > vega.json
           vl2png vega.json -s 1.5 | cml-publish --md --title "loss plot" >> report.md
 
